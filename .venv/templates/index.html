@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO TRAVEL</title>
+    <link rel="shortcut icon" href="{{url_for('static', filename='img/gotravel-favicon.ico')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="header-container">
+            <div class="logo" id="logo">
+                <img src="{{url_for('static', filename='img/gotravel-logo.png')}}" alt=""></img>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>Live Chat</h2>
+            </div>
+            <div class="chat-box">
+
+            </div>
+                <div class="chat-footer">
+                     <textarea type="text" id="text" name="text" aria-label="text" placeholder="Ask your question..."></textarea>
+                     <button class="send-button" id="send-button" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer">
+                <ul class="data-items">
+                    <li><a href='/data'>API DATA (JSON)</a></li>
+                    <li><a href='/pydata'>API DATA (PYTHON)</a></li>
+                </ul>
+                <ul class="copyright">
+                    <li><a href='/'>Go Travel 2023 &copy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+</body>
+</html>
